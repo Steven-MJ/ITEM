@@ -1,7 +1,7 @@
 # ITEM
 Junior Course
 
-请看WChomework文件夹下的文件
+软工作业请看WChomework文件夹下的文件
 
 first.cpp     最初代码并未写附加功能 主函数存在问题
 
