@@ -1,35 +1,26 @@
-int main(int argc,char *argv[])			//main鍑芥暟鎺ュ彈澶栭儴鍙傛暟  
+#include<stdio.h>
+#include<math.h>
+//测试样例5 
+void main()
+
 {
-	char a1[80],a2[80];
-	int i;
-	FILE *p;
-	if(argc == 3)
-	{
-		p = fopen(argv[2],"r");
-		if(p == NULL)
-		{
-			printf("Reading ERROR\n");
-			printf("璇锋寜enter缁х画");
-			_getch();
-			exit(0);
-		}
-		strcpy(a2,argv[2]);
-		strcpy(a1,argv[1]);
-		for(i = 0;a1[i]!='\0';i++)
-		{		 
-			if(a1[i] == 'l')
-				statisticline(a2);
-			else if(a1[i] == 'a')
-				Muiltiple(a2);
-		    else if(a1[i] == 'c')
-				statisticch(a2);
-		    else if(a1[i] == 'w')
-				statisticword(a2);
-			else
-				continue;    
-		}           
-	}	
-	else
-		printf("Warning:Please input three parameters");
-	return 0; 
+    int m,flag,i;
+    scanf("%d",&m);
+    flag=1;
+    for(i=2;i<=sqrt(m);i++)
+    {
+        if(m%i==0)
+        {
+            flag=0;
+            break;
+        }
+    }//DJSIADJFJSAOFJAI
+    if(flag)
+    {
+        printf("%d是素数\n",m);
+    }
+    else
+    {
+        printf("%d不是素数\n",m);
+    }
 }

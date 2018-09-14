@@ -151,7 +151,7 @@ int Muiltiple(char a2[80])  								//综合统计函数，包括代码行，空行，注释行
  
      }
      printf("code line count is ：%d.\n", c);
-     printf("empt line count is ：%d.\n", e);
+     printf("empty line count is ：%d.\n", e);
      printf("note line count is ：%d.\n", n);
      fclose(fp);
      return 1;

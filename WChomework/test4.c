@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main()
-//è½¯ä»¶å·¥ç¨‹æµ‹è¯•
+//Èí¼ş¹¤³Ì²âÊÔ 
 {
     printf("hello world!\n");
     system("pause");
